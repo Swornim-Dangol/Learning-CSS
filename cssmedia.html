@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    <style>
+        .container{
+            background-color: rgba(0,255,0,0.2);
+            padding:15px;
+            padding-left: 30px;
+            padding-right:30px;
+            top:0px;
+            left:0px;
+        }
+        .imagecontainer{
+            width:100%;
+            display:flex;
+            column-gap: 10px;
+            row-gap: 10px;
+            flex-wrap: wrap;
+        }
+        .images{
+            width:30%;
+            aspect-ratio: 1/1.1;
+            background-color: black;
+            padding:7px;
+            border-radius: 5px;
+            margin:0px;
+            text-align: center;
+            color: white;
+        }
+        .images img{
+            width:100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+        @media (min-width:749px){
+            .images{
+                width:45%;
+            }
+            .container{
+                background-color: rgba(0,0,255,.2);
+            }
+        }
+        @media (min-width:1024px){
+            .images{
+                width:30%;
+            }
+            .container{
+                background-color: rgba(0,255,0,0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="font-size: 24px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Media Query Demo</div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sit eum distinctio odio maiores debitis eaque eius consequuntur natus ex facere quasi rem placeat illo, nostrum ullam provident cupiditate. At. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit quaerat possimus a veritatis, quisquam explicabo similique inventore! Nostrum officia libero reiciendis suscipit earum atque inventore accusantium ducimus porro dolorum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tempora, aspernatur quis perspiciatis corrupti enim velit obcaecati aliquid, beatae nobis maiores dignissimos accusamus porro nostrum similique nulla voluptas harum consequatur.</p>
+        </div>
+        <div class="imagecontainer">
+            <figure class="images">
+                <img src="props/cat1.jpg" alt="Cat 1">
+                <figcaption>Place Kittens are great</figcaption>
+            </figure>
+            <figure class="images">
+                <img src="props/cat2.jpg" alt="Cat 2">
+                <figcaption>Place Kittens are great</figcaption>
+            </figure>
+            <figure class="images">
+                <img src="props/cat3.jpg" alt="Cat 3">
+                <figcaption>Place Kittens are great</figcaption>
+            </figure>
+            <figure class="images">
+                <img src="props/cat4.jpg" alt="Cat 4">
+                <figcaption>Place Kittens are great</figcaption>
+            </figure>
+            <figure class="images">
+                <img src="props/cat5.jpg" alt="Cat 5">
+                <figcaption>Place Kittens are great</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>

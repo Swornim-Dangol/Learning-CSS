@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 4</title>
+    <style>
+        #container{
+            display:flex;
+            column-gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 8px -8px 0px #EEEBF9, 8px -8px 5px #b8a0fe;
+        }
+        #box1{
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 0 15px #b8a0fe;
+            border-radius: 10px;
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            flex-direction: column;
+        }
+        #image1{
+            width : 70px;
+            height:70px;
+            position: relative;
+            top:20px;
+            border-radius: 50%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #box2{
+            width: 280px;
+            display:flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;   
+        }
+        #but1{
+            width: 150px;
+            background-color: #5020D5;
+            border: 2px solid  #5020D5;
+            padding: 5px;
+            color:#EEEBF9;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+        #but2{
+            width: 80px;
+            background-color:  #EEEBF9;
+            color: #5020D5;
+            border: 2px solid #5020D5;
+            font-weight: bold;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        #but2:hover{
+            background-color:  #b5b3c0;
+            color:#5020D5;
+            border: 2px solid #5020D5;
+        }
+        #but1:hover{
+            background-color: #351492;
+            color: #EEEBF9;
+            border: 2px solid #351492;
+        }
+    </style>
+</head>
+<body style="background-color: #EEEBF9;">
+    <br>
+    <h1>ABOUT</h1>
+    <br><br><br>
+    <div id="container">
+        <div id="box1">
+            <img id="image1" src="Props/lol.jpg" title="lol"><br><br>
+            <p style="width: 200px; font-size: 14px; margin: 0 auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, libero? Ipsam sequi omnis ut error rerum commodi blanditiis facere, debitis dignissimos dolor placeat! Voluptates temporibus rem obcaecati! Dolor, nostrum perferendis?</p>
+            <p style="font-size:14px;"><div style="font-size: 20px;"><b>Tailor</b></div>
+                CEO of my com</p>
+        </div>
+        <div id="box2">
+            <h4 style="color:#5020D5; margin-top:0px;">Hi! This is AMY</h4>
+            <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin:0px;"><b>Free Lancer Web Developer</b></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsum aperiam nobis accusamus mollitia saepe, aliquid quo ducimus rerum? Aliquam ut corporis sint ducimus. Reprehenderit, adipisci? Repellat voluptatem maiores dolorem!</p>
+            <div>
+                <button id="but1">Download Resume</button>
+                <button id="but2">Hire me</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
