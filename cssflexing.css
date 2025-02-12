@@ -1,0 +1,101 @@
+#container{
+    display:flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px ;
+    background: linear-gradient(to right,rgb(255, 107, 255),rgb(197, 0, 197),blue);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.textinside{
+    width: 250px; 
+    font-size: 14px; 
+    margin: 0 auto;
+}
+/*boxes*/
+#box1{
+    width: 350px;
+    aspect-ratio: 3/4;
+    text-align: center;
+    box-shadow: 0 0 15px #8f69ff;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(2px);
+}
+#box2{
+    width: 350px;
+    aspect-ratio: 3/4;
+    display:flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; 
+    border-radius: 12px; 
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+/* image */
+#image1{
+    width : 80px;
+    height:80px;
+    position: relative;
+    top:20px;
+    border-radius: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*buttons*/
+#but1{
+    width: 150px;
+    background:linear-gradient(to right,#875bff,#5020D5);
+    border: none;
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color:#EEEBF9;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+#but2{
+    width: 80px;
+    background-color:  #EEEBF9;
+    color: #5020D5;
+    border: 2px solid #5020D5;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px;
+    transition : all 0.3s ease;
+}
+
+#but1:hover{
+    scale:1.05;
+    box-shadow: 0 0 7px #8259ff;
+}
+#but2:hover{
+    scale:1.05;
+    box-shadow: 0 0 7px #8259ff;
+}
+
+/* this is for boxes */
+#box1:hover{
+    scale:1.05;
+    transition:all 0.3s ease;
+    box-shadow: 0 0 25px #8f69ff;
+}
+#box2:hover{
+    scale: 1.05;
+    transition: all 0.3s ease;
+}

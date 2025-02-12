@@ -4,107 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main program</title>
-    <style>
-        #container{
-            display:flex;
-            column-gap: 30px;
-            align-items: center;
-            justify-content: center;
-        }
-        h1{
-            text-align: center;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-shadow: 8px -8px 0px #EEEBF9, 8px -8px 5px #b8a0fe;
-        }
-        #box1{
-            width: 280px;
-            text-align: center;
-            box-shadow: 0 0 15px #b8a0fe;
-            border-radius: 10px;
-            display:flex;
-            flex-direction: column;
-            align-content: center;
-            flex-direction: column;
-        }
-        #image1{
-            width : 70px;
-            height:70px;
-            position: relative;
-            top:20px;
-            border-radius: 50%;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        #box2{
-            width: 280px;
-            display:flex;
-            align-content: center;
-            flex-direction: column;
-            justify-content: center; 
-            border-radius: 12px;
-            padding: 20px;  
-        }
-        #but1{
-            width: 150px;
-            background:linear-gradient(to right,#875bff,#5020D5);
-            border: none;
-            padding: 5px;
-            padding-top: 7px;
-            padding-bottom: 7px;
-            color:#EEEBF9;
-            border-radius: 15px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        #but2{
-            width: 80px;
-            background-color:  #EEEBF9;
-            color: #5020D5;
-            border: 2px solid #5020D5;
-            font-weight: bold;
-            border-radius: 15px;
-            padding: 5px;
-            transition : all 0.3s ease;
-        }
-        #but1:hover{
-            scale:1.05;
-            box-shadow: 0 0 7px #8259ff;
-        }
-        #but2:hover{
-            scale:1.05;
-            box-shadow: 0 0 7px #8259ff;
-        }
-        #box1:hover{
-            scale:1.1;
-            transition:all 0.3s ease;
-            box-shadow: 0 0 25px #b8a0fe;
-        }
-        #box2:hover{
-            scale: 0.98;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 15px #b8a0fe inset;
-        }
-    </style>
+    <link rel="stylesheet" href="cssflexing.css">
 </head>
-<body style="background-color: #EEEBF9;">
+<body style="background-image: url('Props/backpurple.jpg');">
     <br>
-    <h1>ABOUT</h1>
-    <br><br><br>
+    <h1>Trying out things XD</h1>
+    <br><br>
     <div id="container">
-        <div id="box1">
-            <img id="image1" src="Props/lol.jpg" title="lol"><br><br>
-            <p style="width: 200px; font-size: 14px; margin: 0 auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, libero? Ipsam sequi omnis ut error rerum commodi blanditiis facere, debitis dignissimos dolor placeat! Voluptates temporibus rem obcaecati! Dolor, nostrum perferendis?</p>
-            <p style="font-size:14px;"><div style="font-size: 20px;"><b>Tailor</b></div>
-                CEO of my com</p>
-        </div>
         <div id="box2">
-            <h4 style="color:#5020D5; margin-top:0px;">Hi! This is AMY</h4>
-            <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin:0px;"><b>Free Lancer Web Developer</b></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsum aperiam nobis accusamus mollitia saepe, aliquid quo ducimus rerum? Aliquam ut corporis sint ducimus. Reprehenderit, adipisci? Repellat voluptatem maiores dolorem!</p>
+            <h4 style="color:#5020D5; margin-top:0px;">Hi! This is Swornim</h4>
+            <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 0 auto;"><b>Free Lancer Front-end Developer</b></h3><br>
+            <p class="textinside">I am Swornim, a student at St.Xavier's college. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim tenetur repudiandae cum laboriosam blanditiis, sunt possimus. Sapiente reiciendis ullam adipisci iure unde neque nostrum, accusamus sed qui culpa possimus esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus amet quae quia. Dignissimos molestias iure doloribus est expedita! Soluta, dolor voluptates sapiente expedita eos assumenda quibusdam accusamus officiis eveniet sequi.</p><br><br>
             <div>
                 <button id="but1">Download Resume</button>
                 <button id="but2" onclick="window.location.href='cssmedia.html'">Click me</button>
             </div>
+        </div>
+
+        <div id="box1">
+            <img id="image1" src="Props/lol.jpg" title="lol"><br><br>
+            <p class="textinside">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, libero? Ipsam sequi omnis ut error rerum commodi blanditiis facere, debitis dignissimos dolor placeat! Voluptates temporibus rem obcaecati! Dolor, nostrum perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita atque neque assumenda quo vitae, soluta voluptatem nulla, qui sed laudantium doloribus quam consequatur explicabo labore, ea quos? Dignissimos, hic dolorum.</p>
+            <p style="font-size:14px;"><div style="font-size: 20px;"><b>Tailor</b></div>
+                CEO of my com</p>
         </div>
     </div>
 </body>
