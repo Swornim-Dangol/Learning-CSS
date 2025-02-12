@@ -29,8 +29,7 @@ h1{
     flex-direction: column;
     align-content: center;
     flex-direction: column;
-    background-color: rgba(255,255,255,0.7);
-    backdrop-filter: blur(2px);
+    background: linear-gradient(45deg,rgb(255, 255, 255),rgb(255, 219, 255));
 }
 #box2{
     width: 350px;
