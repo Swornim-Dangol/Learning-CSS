@@ -5,89 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program 2</title>
     <style>
-        .container{
-            background: linear-gradient(to right,rgba(0,255,0,0.2),rgba(0, 89, 255, 0.2));
-            padding:15px;
-            padding-left: 30px;
-            padding-right:30px;
-            top:0px;
-            left:0px;
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #001f3f, #012345);
+            color:white;
         }
-        .imagecontainer{
-            width:100%;
-            display:flex;
-            column-gap: 10px;
-            row-gap: 10px;
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(to right, #001a33, #012345);
+            padding: 15px 30px;
+            box-sizing: border-box;
+        }
+
+        .imagecontainer {
+            width: 100%;
+            display: flex;
             flex-wrap: wrap;
-            transition: all 0.3s ease;
-            justify-content: space-around;
+            gap: 5px;
+            justify-content: center;
         }
-        .images{
-            width:30%;
+
+        .images {
+            width: 30%;
             aspect-ratio: 1/1.1;
-            background-color: black;
-            padding:7px;
+            background-color: #0a0a0a;
+            padding: 8px;
             border-radius: 10px;
-            margin:0px;
             text-align: center;
             color: white;
+            transition: all 0.3s ease-in-out;
         }
-        .images img{
-            width:100%;
+
+        .images img {
+            width: 100%;
             aspect-ratio: 1/1;
             border-radius: 5px;
             object-fit: cover;
         }
-        @media (min-width:749px){
-            .images{
-                width:45%;
-            }
-            .container{
-                background-color: linear-gradient(to right,rgba(255, 0, 242, 0.2),rgba(220, 255, 220, 0.2));
+
+        @media (max-width:500px) {
+            .images {
+                width: 90%;
             }
         }
-        @media (min-width:1024px){
-            .images{
-                width:30%;
-            }
-            .container{
-                background-color: linear-gradient(to right,rgba(0,255,0,0.2),rgba(70, 212, 255, 0.2));
-            }
+
+        .images:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 10px rgb(0, 0, 0), -4px -4px 10px rgb(255, 255, 255);
         }
-        .images:hover{
-            transition: all 0.3s ease;
-            scale : 1.02;
-            box-shadow: 4px 4px 10px black, -6px -6px 10px white;
-        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div style="font-size: 24px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Resize the page to see the effects</div>
+        <div style="font-size: 24px; font-family:Arial, Helvetica, sans-serif">Some of my Drawings</div>
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sit eum distinctio odio maiores debitis eaque eius consequuntur natus ex facere quasi rem placeat illo, nostrum ullam provident cupiditate. At. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit quaerat possimus a veritatis, quisquam explicabo similique inventore! Nostrum officia libero reiciendis suscipit earum atque inventore accusantium ducimus porro dolorum!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tempora, aspernatur quis perspiciatis corrupti enim velit obcaecati aliquid, beatae nobis maiores dignissimos accusamus porro nostrum similique nulla voluptas harum consequatur.</p>
+            <p>These are some or the artworks I made during and after the pandemic. I used to be so opitmistic while doing artworks. I drew everyday for almost a year during pandemic and learned alot of new things about art. I wish I had continued this possibly even as a career but I had to let it go because of some things. But I am still proud of what I made back then I still make some artworks once or twice a year to re-live and re-experience my love for drawing</p>
         </div>
         <div class="imagecontainer">
             <figure class="images">
-                <img src="Props/cat1.jpg" alt="Cat 1">
-                <figcaption>Place Kittens are great</figcaption>
+                <img src="Props/art1.jpg" alt="art 1">
+                <figcaption>This one was cool</figcaption>
             </figure>
             <figure class="images">
-                <img src="Props/cat2.jpg" alt="Cat 2">
-                <figcaption>Place Kittens are great</figcaption>
+                <img src="Props/art2.jpg" alt="art 2">
+                <figcaption>Sigma boy</figcaption>
             </figure>
             <figure class="images">
-                <img src="Props/cat3.jpg" alt="Cat 3">
-                <figcaption>Place Kittens are great</figcaption>
+                <img src="Props/art3.jpg" alt="art 3">
+                <figcaption>This one was fan fav</figcaption>
             </figure>
             <figure class="images">
-                <img src="Props/cat4.jpg" alt="Cat 4">
-                <figcaption>Place Kittens are great</figcaption>
+                <img src="Props/art4.jpg" alt="art 4">
+                <figcaption>This was my first ever collab art</figcaption>
             </figure>
             <figure class="images">
-                <img src="Props/cat5.jpg" alt="Cat 5">
-                <figcaption>Place Kittens are great</figcaption>
+                <img src="Props/art5.jpg" alt="art 5">
+                <figcaption>This one took the longest time</figcaption>
+            </figure>
+            <figure class="images">
+                <img src="Props/art6.jpg" alt="art 6">
+                <figcaption>Lol how did this end up here</figcaption>
             </figure>
         </div>
     </div>
